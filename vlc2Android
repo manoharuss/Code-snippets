@@ -1,0 +1,39 @@
+
+##Please save this python script in the same folder
+##as your VLC or Windows Media playlist, you want to convert
+
+
+
+##Read in the file with format extension
+with open ("INPUT_VLCplaylist_HERE.m3u", "r") as myfile:
+    data=myfile.read().replace('\n', '')
+
+##SPlit it into multiple pieces in X datatype ''list'
+x=data.split('\Music')
+boom=data.split('\Music')
+##This a temporary string to account for split part
+direct="\\Music"
+
+##This pops out the first item in X list which is the extension VLC uses
+p = x.pop(0)
+
+it=len(boom)
+
+##Whatever playlist name you change here is going to show in your Android phone
+text_file = open("Output_Android_Playlistname_HERE.m3u", "w")
+
+##The loop splits each string in X and takes the mp3 directory,adds \Music upfront and writes into the .m3u file
+
+count = 0
+while (count < it-1):
+   p = x.pop(0)
+   temp1=p.split('#EXT')
+   temp1=temp1.pop(0)
+   line=direct + temp1
+   text_file.write(line)
+   text_file.write("\n")
+   count = count + 1
+
+text_file.close()
+
+##This is not the most efficient but I welcome your suggestions.
