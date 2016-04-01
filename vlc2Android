@@ -1,3 +1,9 @@
+##Problem is that when we make a local playlist with an app such as Google music player in Android. It is not usually visible in
+##other music playing application. Also when you uninstall the app, all the playlists get deleted from the app. So to have them
+##locally and available to all apps we need to make a playlist that is compatible,available for all apps.
+##This can be achieved by making the playlist in vlc or windows media player in your computer from your music library
+##and running this script
+
 
 ##Please save this python script in the same folder
 ##as your VLC or Windows Media playlist, you want to convert
