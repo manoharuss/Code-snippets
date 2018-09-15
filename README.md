@@ -1,4 +1,1 @@
-# Code-snippets
-Code that can be useful to make life easier
-
-I will upload small code snippets here that I use to ease life.
+Takes a saved m3u playlist from vlc, makes it Android compatible m3u playlist that can be copied over with the same music library
